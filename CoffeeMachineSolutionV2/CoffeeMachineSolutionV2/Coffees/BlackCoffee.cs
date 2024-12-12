@@ -1,6 +1,17 @@
-﻿namespace CoffeeMachineSolutionV2.Coffees;
+﻿using CoffeeMachineSolutionV2.CoffeeComponents;
 
-public class BlackCoffee
+namespace CoffeeMachineSolutionV2.Coffees;
+
+public class BlackCoffee: Coffee
 {
+    public override string Name { get; set; }="Black Coffee";
+    public CoffeeBeans Beans { get; set; }
+
+    public BlackCoffee(CoffeeBeans beans)
+    {
+        Beans = beans;
+    }
+
     
+   
 }

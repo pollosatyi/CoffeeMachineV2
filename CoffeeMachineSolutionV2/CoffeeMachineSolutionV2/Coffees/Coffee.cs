@@ -1,6 +1,11 @@
 ﻿namespace CoffeeMachineSolutionV2.Coffees;
 
-public class Coffee
+public abstract class Coffee
 {
-    
+    public abstract string Name { get; set; }
+
+    public  void MakeCoffee()
+    {
+        Console.WriteLine($" Кофе {Name} готов");
+    }
 }
