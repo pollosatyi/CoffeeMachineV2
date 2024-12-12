@@ -8,3 +8,4 @@ public enum CoffeeType
     CapuccinoWithSugar=4,
     Latte=5
 }
+
